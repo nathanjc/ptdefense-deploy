@@ -322,13 +322,15 @@ nav a li.active {
 }
 
 .action_button {
-  background: #1F2432;
+  background: #444E70;
   border-radius: 6px;
-  padding: 5px 8px 8px;
+  padding: 4px 8px 8px;
+  border: 1px solid #39415E;
   width: 170px;
   margin: 44px 4px;
   cursor: pointer;
   display: inherit;
+  box-shadow: 0 2px #1F2432;
 }
 
 .action_button > img {
@@ -336,10 +338,9 @@ nav a li.active {
   z-index: 1;
   height: auto !important;
   width: 30px;
-  padding: 1px 0 3px;
   margin: 0 8px 0 0;
   display: inline;
-  vertical-align: middle;
+  vertical-align: text-top;
 }
 
 #directions > img {
@@ -405,10 +406,10 @@ nav > #nav-menu, #nav-list-mobile, .mobile {
     width: 22px;
     height: auto !important;
     margin: 0 15px 0 30px;
-    vertical-align: middle;
+    vertical-align: baseline;
     position: absolute;
     right: 15px;
-    padding-top: 6px;
+    padding-top: 8px;
     
   }
 

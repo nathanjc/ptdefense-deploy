@@ -144,9 +144,18 @@
                 }
               }
             });
+            $( "#nav-menu" ).click(function() {
+              if ( $( "#nav-list-mobile" ).is( ":hidden" ) ) {
+                $( "#nav-list-mobile" ).slideDown("fast");
+              } else {
+                $( "#nav-list-mobile" ).slideUp("fast");
+              }
+            });
+            $( window ).resize(function() {
+              $( "#nav-list-mobile" ).slideUp( "fast" );
+            });
           });
         </script>
-        <script src="javascripts/dropdown.js"></script>
       </main>
       <!-- footer-->
       <footer role="footer" class="row">

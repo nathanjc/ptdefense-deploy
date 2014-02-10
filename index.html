@@ -29,14 +29,22 @@
 
         <!-- global navigation-->
         <nav role="navigation" class="row">
-          <div class="action_button_wrapper mobile"><a href="tel:3603798906">
-              <div class="action_button"><img src="images/phone.png"/>
+          <div class="action_button_wrapper mobile">
+            <a href="tel:3603798906">
+              <div class="action_button">
+                <img src="images/phone.png"/>
                 <p class="inline">(360) 379-8906</p>
-              </div></a></div>
-          <div class="action_button_wrapper mobile"><a href="https://www.google.com/maps/place/624+Polk+St/@48.116668,-122.7614219,17z">
-              <div id="directions" class="action_button"><img src="images/map-pin.png"/>
+              </div>
+            </a>
+          </div>
+          <div class="action_button_wrapper mobile">
+            <a href="https://www.google.com/maps/place/624+Polk+St/@48.116668,-122.7614219,17z">
+              <div id="directions" class="action_button">
+                <img src="images/map-pin.png"/>
                 <p class="inline">DIRECTIONS</p>
-              </div></a></div>
+              </div>
+            </a>
+          </div>
           <div id="nav-menu">
             <p>home</p>
             <img src="images/nav-menu.png"/>
@@ -115,13 +123,13 @@
           <section class="col span_6 clr">
             <h5>Our Law Office</h5>
             <address>
-              <p>624 Polk Street<br/>Port Townsend, WA 98368<br/><em>Phone </em><strong>– (360) 379-8906</strong><br/><a target="#" href="https://goo.gl/maps/iKXEV">get directions →</a></p>
+              <p>624 Polk Street<br/>Port Townsend, WA 98368<br/><em>Phone </em><strong>– (360) 379-8906</strong><br/><a target="#" href="https://www.google.com/maps/place/624+Polk+St/@48.116668,-122.7614219,17z">get directions →</a></p>
             </address>
           </section>
           <section class="col span_6 clr">
             <h5>Jefferson County Courthouse</h5>
             <address>
-              <p>1820 Jefferson Street<br/>Port Townsend, WA  98368<br/><em>Phone </em><strong>– (000) 000-0000 </strong><br/><a target="#" href="https://goo.gl/maps/OiOet">get directions →</a></p>
+              <p>1820 Jefferson Street<br/>Port Townsend, WA  98368<br/><em>Phone </em><strong>– (360) 385-9135 </strong><br/><a target="#" href="https://www.google.com/maps/place/1820+Jefferson+St/@48.1118682,-122.7671434,17z">get directions →</a></p>
             </address>
           </section>
         </div>
@@ -142,9 +150,18 @@
                 }
               }
             });
+            $( "#nav-menu" ).click(function() {
+              if ( $( "#nav-list-mobile" ).is( ":hidden" ) ) {
+                $( "#nav-list-mobile" ).slideDown("fast");
+              } else {
+                $( "#nav-list-mobile" ).slideUp("fast");
+              }
+            });
+            $( window ).resize(function() {
+              $( "#nav-list-mobile" ).slideUp( "fast" );
+            });
           });
         </script>
-        <script src="javascripts/dropdown.js"></script>
       </main>
       <!-- footer-->
       <footer role="footer" class="row">
