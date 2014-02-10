@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!-- give the site a name-->
+    <title>RICHARD DAVIES</title>
+    
+    <!-- describe the site a little bit-->
+    <meta name="description" content="DUI, traffic, speeding and criminal defense attorney in Port Townsend, Jefferson County, Washington.">
+    <meta name="keywords" content="Port Townsend, Jefferson County, Defense Attorney, DUI,  DWI, Felony, Misdemeanor, Speeding Ticket, Criminal Defense, Lawyer, Traffic infraction, Port Ludlow, Port Hadlock, Quilcene, Brinnon, Hood Canal, Discovery Bay, Gardiner">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+    
+    <!-- google site verification-->
+    <meta name="google-site-verification" content="6gIpgdpEoLOF6jKyO_S2IB-drtScha4IJb5CwUVDmBg">
+    
+    <!-- link to main stylesheet-->
+    <link href='http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="stylesheets/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <!-- site banner header... thing...-->
+      <header role="banner" class="row">
+        <div class="wrapper">
+          <h1>Richard L. Davies</h1>
+          <h2>Attorney at Law</h2>
+        </div>
+
+        <!-- global navigation-->
+        <nav role="navigation" class="row">
+          <div class="action_button_wrapper mobile"><a href="tel:3603798906">
+              <div class="action_button"><img src="images/phone.png"/>
+                <p class="inline">(360) 379-8906</p>
+              </div></a></div>
+          <div class="action_button_wrapper mobile"><a href="https://www.google.com/maps/place/624+Polk+St/@48.116668,-122.7614219,17z">
+              <div id="directions" class="action_button"><img src="images/map-pin.png"/>
+                <p class="inline">DIRECTIONS</p>
+              </div></a></div>
+          <div id="nav-menu">
+            <p>about</p>
+            <img src="images/nav-menu.png"/>
+          </div>
+          <ul id="nav-list-mobile">
+            <a href="index.html">
+              <li class="col span_2">home</li>
+            </a>
+            <a href="work.html">
+              <li class="col span_2">work</li>
+            </a>
+            <a href="faq.html">
+              <li class="col span_2">faq</li>
+            </a>
+            <a href="contact.html">
+              <li class="col span_2">contact</li>
+            </a>
+          </ul>
+          <ul id="nav-list-desktop">
+            <a href="index.html">
+              <li class="col span_2">home</li>
+            </a>
+            <a href="about.html">
+              <li class="col span_4 active">about</li>
+            </a>
+            <a href="work.html">
+              <li class="col span_2">work</li>
+            </a>
+            <a href="faq.html">
+              <li class="col span_2">faq</li>
+            </a>
+            <a href="contact.html">
+              <li class="col span_2">contact</li>
+            </a>
+          </ul>
+        </nav>
+        <!-- page specific headers-->
+        <div id="top" class="banner_wrapper">
+          <h3>RICHARD DAVIES</h3>
+          <h4>Local Defender in Port Townsend for over 17 Years</h4>
+        </div>
+      </header>
+      <!-- main body content wrapper-->
+      <main role="main" class="row">
+        <!-- main body content-->
+
+        <div class="wrapper">
+          <section class="row">
+            <div class="row">
+              <h5>Meet Richard Davies — Attorney at Law</h5>
+              <hr/>
+            </div>
+            <div class="col span_10">
+              <p>Richard Davies has been defending the rights of people charged with DUI/DWI and other crimes in Port Townsend and Jefferson County for over 17 years.  </p>
+              <p>Mr. Davies graduated from the University of Washington School of Law in 1988. After graduating, he moved to the southwest, where he worked as a government attorney doing complex federal civil litigation.</p>
+            </div>
+            <div class="avatar_wrapper col span_2"><img src="images/davies.jpg" class="avatar"/></div>
+          </section>
+        </div>
+        <div class="wrapper">       
+          <section class="row">
+            <div class="col span_12">
+              <h6>Richard Davies is a member of:</h6>
+              <ul>
+                <li>Washington State Bar Association</li>
+                <li>Ninth Circuit Court of Appeals</li>
+                <li>United States District Court, Western District of Washington</li>
+                <li>Washington Association of Criminal Defense Lawyers</li>
+                <li>Washington Defender Association</li>
+                <li>American Civil Liberties Union</li>
+                <li>National Organization for the Reform of Marijuana Laws</li>
+              </ul>
+            </div>
+          </section>
+        </div>
+        <div class="wrapper">         
+          <section class="row">
+            <div class="row">
+              <h5>Jennifer Dempsey — Legal Assistant</h5>
+              <hr/>
+            </div>
+            <div class="col span_10">
+              <p>Jennifer Dempsey, Mr. Davies' legal assistant, has 11 years experience.  </p>
+              <p>She has a wealth of paralegal experience and knowledge of how to get things done within the local judicial system and Department of Licensing.  </p>
+              <p>She is always available to make sure your needs are taken care of fast and efficiently.</p>
+            </div>
+            <div class="avatar_wrapper col span_2"><img src="images/jennifer.jpg" class="avatar"/></div>
+          </section>
+        </div>
+
+        <!-- scripts-->
+        <script src="javascripts/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript">
+          $(document).ready(function() {
+            $('a[href*=#]:not([href=#])').click(function() {
+              if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+              
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                if (target.length) {
+                  $('html,body').animate({
+                    scrollTop: target.offset().top
+                  }, 500);
+                  return false;
+                }
+              }
+            });
+          });
+        </script>
+        <script src="javascripts/dropdown.js"></script>
+      </main>
+      <!-- footer-->
+      <footer role="footer" class="row">
+        <section class="col span_12 clr banner_wrapper">
+          <div class="col span_8">
+            <h3>Call now <span class="exception">for a </span>Free Consult: </h3>
+          </div>
+          <div id="call_action_button" class="col span_4"><a href="tel:3603798906">
+              <div class="action_button"><img src="images/phone.png">
+                <p class="inline">(360) 379-8906</p>
+              </div></a></div>
+        </section>
+        <section class="col span_12 clr">
+          <div class="wrapper">
+            <h3>LOCAL ATTORNEY : BETTER RESULTS</h3>
+            <h4>624 Polk Street • Port Townsend, WA</h4>
+          </div>
+        </section>
+        <section class="col span_12 clr">
+          <div id="to-top_wrapper"><a id="to-top" href="#top">↑</a></div>
+        </section>
+      </footer>
+    </div>
+  </body>
+</html>

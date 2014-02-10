@@ -1,0 +1,422 @@
+/* ==========================================================================
+ 
+ Table of Contents
+ 
+ ========================================================================== */
+/*
+
+  0.  Ground zero
+  1.  Typography
+  2.  General
+  3.  Navigation
+  4.  Button wrapper
+  5.  To-top button
+  6.  Action button
+  7.  Tools
+
+*/
+
+/* ==========================================================================
+ 0. Includes - Ground zero & responsive.css
+ ========================================================================== */
+
+/* import reset css */
+@import url(normalize.css);
+/* import responsive */
+@import url(responsive.css);
+/* ground zero */
+* {
+  margin: 0;
+  padding: 0
+}
+
+/* ==========================================================================
+ 1. Typography
+ ========================================================================== */
+
+body {
+  font: 20px "Crimson Text", serif !important;
+  color: #1F2432;
+  font-weight: 400;
+  font-style: normal
+}
+
+/* type styles */
+h1, h2, h3, h4 {
+  text-rendering: optimizeLegibility;
+  text-align: center
+}
+
+h1 {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.6667em;
+  /* 48px */
+  line-height: 1.3125em;
+  /* 63px */
+  margin-top: 0.4375em;
+  margin-bottom: 0
+}
+
+h2 {
+  font-weight: 400;
+  font-style: italic;
+  font-size: 2em;
+  /* 36px */
+  line-height: 1.1667em;
+  /* 42px */
+  margin-top: 0.5833em;
+  margin-bottom: 0
+}
+
+h3 {
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.3333em;
+  /* 24px */
+  line-height: 1.75em;
+  /* 42px */
+  margin-top: 0.875em;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  color: #444E70
+}
+
+h4 {
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.3333em;
+  /* 24px */
+  line-height: 1.75em;
+  /* 42px */
+  margin-top: 0.875em;
+  margin-bottom: 0;
+  color: #444E70
+}
+
+h5 {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.1667em;
+  /* 21px */
+  line-height: 1em;
+  /* 21px */
+  margin-top: 1em;
+  margin-bottom: 0;
+  color: #444E70
+}
+
+h6 {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.1667em;
+  /* 21px */
+  line-height: 1em;
+  /* 21px */
+  margin-top: 1em;
+  margin-bottom: 0;
+  text-transform: uppercase
+}
+
+/* fixes leading for headers */
+h1 + h2,
+h3 + h4,
+section > h5 {
+  margin-top: 0;
+}
+
+p {
+  font-size: 1em;
+  /* 18px */
+  line-height: 1.1667em;
+  /* 21px */
+  margin: 0 0 1.1667em 0;
+  color: #1F2432
+}
+
+/* extras */
+a {
+  color: #444E70;
+  text-decoration: none
+}
+
+p a, li a {
+  color: #1F2432;
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-size: 0.75em
+}
+
+em {
+  font-style: italic
+}
+
+strong {
+  font-weight: bold
+}
+
+span.exception {
+  text-transform: lowercase;
+  font-style: italic
+}
+
+hr {
+  margin-top: 1.1667em;
+  /* 21px */
+  margin-bottom: 1.5em;
+  /* 21px */
+}
+
+/* colors phone number links #fff */
+span.gc-cs-link {
+  color: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  text-decoration: none
+}
+
+.button span.gc-cs-link {
+  color: #fff;
+  font-weight: inherit;
+  font-style: normal;
+  text-decoration: none
+}
+
+/* ==========================================================================
+ 2. General styles
+ ========================================================================== */
+
+/* overall verticle spacing between elements */
+header, footer, main, .wrapper, section, article {
+  margin-top: 2em;
+  margin-bottom: 1em
+}
+
+/* wrapper provides left and right margins */
+.wrapper {
+  margin-right: 2em;
+  margin-left: 2em
+}
+
+/* list styles */
+ul li, ol li {
+  margin-right: 1em;
+  margin-left: 2em
+}
+
+/* reset nav ul li */
+nav ul li {
+  margin-right: 0;
+  margin-left: 0
+}
+
+/* avatar */
+.avatar {
+  text-align: center;
+  width: 90px;
+  height: auto !important
+}
+
+.avatar_wrapper {
+  text-align: center;
+  margin: auto
+}
+
+/* ==========================================================================
+ 3. Navigation styles
+ ========================================================================== */
+
+/* element styles */
+nav {
+  margin-top: 2em;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+nav a li {
+  text-align: center;
+  text-transform: uppercase;
+  display: inline;
+  padding: 12px;
+  background: #fff;
+  color: #444E70;
+  -moz-box-shadow: inset 0 -4px #282E41;
+  -webkit-box-shadow: inset 0 -4px #282E41;
+  box-shadow: inset 0 -4px #282E41;
+}
+
+nav a li:hover {
+  background: #4C587E;
+  color: white;
+  -moz-box-shadow: inset 0 -4px #31394F;
+  -webkit-box-shadow: inset 0 -4px #31394F;
+  box-shadow: inset 0 -4px #31394F
+}
+
+nav a li:active {
+  background: #1F2432;
+  -moz-box-shadow: inset 0 2px #181C26;
+  -webkit-box-shadow: inset 0 2px #181C26;
+  box-shadow: inset 0 2px #181C26
+}
+
+nav a li.active {
+  background: #1F2432;
+  color: white;
+  -moz-box-shadow: inset 0 -4px #1F2432;
+  -webkit-box-shadow: inset 0 -4px #1F2432;
+  box-shadow: inset 0 -4px #1F2432
+}
+
+/* ==========================================================================
+ 4. Button wrapper styles
+ ========================================================================== */
+
+.banner_wrapper {
+  background-color: #444E70;
+  color: #fff;
+  padding: 12px 32px;
+}
+
+.banner_wrapper h3 {
+  color: #fff;
+  font-family: "Crimson Text" !important;
+  font-weight: 400;
+  margin-top: 0
+}
+
+.banner_wrapper h4 {
+  color: #fff;
+}
+
+/* ==========================================================================
+ 5. To-top button
+ ========================================================================== */
+#to-top_wrapper {
+  margin: 2em;
+  text-align: center
+}
+
+#to-top {
+  margin: auto;
+  background: #444E70;
+  color: #fff;
+  padding: 21px 30px;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+}
+
+#to-top:hover {
+  background: #1F2432;
+}
+
+/* ==========================================================================
+ 6. Action button
+ ========================================================================== */
+
+.action_button_wrapper {
+  display: inline;
+  margin: 8px 0;
+}
+
+.action_button {
+  background: #1F2432;
+  border-radius: 6px;
+  padding: 5px 8px 8px;
+  width: 170px;
+  margin: 44px 4px;
+  cursor: pointer;
+  display: inherit;
+}
+
+.action_button > img {
+  position: relative;
+  z-index: 1;
+  height: auto !important;
+  width: 30px;
+  padding: 1px 0 3px;
+  margin: 0 8px 0 0;
+  display: inline;
+  vertical-align: middle;
+}
+
+#directions > img {
+  width: 22px;
+}
+
+#call_action_button {
+  text-align: center;
+  margin-top: 8px;
+}
+
+.action_button > p {
+  color: #fff;
+  font-size: 16px;
+}
+
+/* ==========================================================================
+ 7. Tools
+ ========================================================================== */
+
+
+.inline {
+  display: inline;
+}
+
+
+nav > #nav-menu, #nav-list-mobile, .mobile {
+  display: none;
+}
+
+
+@media ( max-width : 768px ) {
+
+  #nav-list-desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: inline;
+  }
+
+  #nav-list-mobile .active {
+    display: none;
+  }
+
+  nav > #nav-menu {
+    display: block;
+    background: #1F2431;
+    color: #fff;
+    padding: 16px 8px;
+    margin-top: 18px;
+    text-align: center;
+  }
+
+  #nav-menu > p {
+    color: inherit;
+    display: inline;
+    vertical-align: middle;
+    text-transform: uppercase;
+  }
+
+  #nav-menu > img {
+    width: 22px;
+    height: auto !important;
+    margin: 0 15px 0 30px;
+    vertical-align: middle;
+    position: absolute;
+    right: 15px;
+    padding-top: 6px;
+    
+  }
+
+  /* thin the bottom line on links */
+  nav a li {
+    -moz-box-shadow: inset 0 -2px #282E41;
+    -webkit-box-shadow: inset 0 -2px #282E41;
+    box-shadow: inset 0 -2px #282E41;
+  }
+
+}
