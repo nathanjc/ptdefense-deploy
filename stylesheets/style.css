@@ -211,15 +211,22 @@ nav ul li {
   margin-left: 0
 }
 
+.photo {
+  max-width: 350px;
+  width: 100%;
+  padding: 5px 0;
+}
+
 /* avatar */
 .avatar {
   text-align: center;
-  width: 90px;
+  width: 100%;
+  max-width: 200px;
   height: auto !important
 }
 
 .avatar_wrapper {
-  text-align: center;
+  text-align: right;
   margin: auto
 }
 
@@ -241,17 +248,17 @@ nav a li {
   padding: 12px;
   background: #fff;
   color: #444E70;
-  -moz-box-shadow: inset 0 -4px #282E41;
-  -webkit-box-shadow: inset 0 -4px #282E41;
-  box-shadow: inset 0 -4px #282E41;
+  -moz-box-shadow: inset 0 -2px #282E41;
+  -webkit-box-shadow: inset 0 -2px #282E41;
+  box-shadow: inset 0 -2px #282E41;
 }
 
 nav a li:hover {
   background: #4C587E;
   color: white;
-  -moz-box-shadow: inset 0 -4px #31394F;
-  -webkit-box-shadow: inset 0 -4px #31394F;
-  box-shadow: inset 0 -4px #31394F
+  -moz-box-shadow: inset 0 -2px #31394F;
+  -webkit-box-shadow: inset 0 -2px #31394F;
+  box-shadow: inset 0 -2px #31394F
 }
 
 nav a li:active {
@@ -411,6 +418,10 @@ nav > #nav-menu, #nav-list-mobile, .mobile {
     right: 15px;
     padding-top: 8px;
     
+  }
+  
+  .avatar_wrapper {
+    text-align: center;
   }
 
   /* thin the bottom line on links */
