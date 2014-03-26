@@ -217,6 +217,12 @@ nav ul li {
   padding: 5px 0;
 }
 
+.regular_link {
+  text-transform: none;
+  font-size: 1em;
+  font-weight: 400;
+}
+
 /* avatar */
 .avatar {
   text-align: center;
